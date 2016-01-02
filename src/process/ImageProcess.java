@@ -14,7 +14,8 @@ public class ImageProcess {
         try {
             imageModel = new ImageModel(imageName);
             outputImage = imageModel.createOutputImage();
-            ImageIO.write(outputImage, "jpg", new File("2.jpg"));
+//            ImageIO.write(outputImage, "jpg", new File("output.jpg"));
+            ImageIO.write(outputImage, "png", new File("output.png"));
         } catch (Exception e) {
             e.printStackTrace();
         }
